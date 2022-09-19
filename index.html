@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagenes/favicon-16x16 1.png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="Logo alura">
+    </header>
+    <main>
+        <section class="seccion_encriptar">
+            <textarea class="input-texto" cols="40" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="botones">
+                <p> &#9888; Solo letras minúsculas y sin acentos</p>
+                <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="seccion_desencriptar">
+            <textarea class="mensaje" cols="50" rows="20"></textarea>
+            <div id="ocultaElementos">
+                <p id="mensaje_no_encontrado">Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <button class="copiar" onclick="copiar()">Copiar</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
